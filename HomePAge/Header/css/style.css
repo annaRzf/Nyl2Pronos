@@ -1,7 +1,8 @@
-.mere{
-  height: 100%;
-}
-.mere .index0{
+
+
+
+
+.body .index0{
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -9,26 +10,231 @@
   background-image: url('../img/terrain.png');
   background-repeat:  no-repeat;
 }
-.mere .index1{
+
+.body #index2{
+  
+  z-index: 2;
+}
+#index2{
+    
+      margin-top: -6.2%;
+}
+
+.body .ll {
   position: absolute;
   z-index: 1;
   height: 142.5%;
   background-color: #001e3b;
   opacity: 0.5;
 }
+#lNav{
+  max-width: 430px;
+  min-width: 400px;
+  margin-left: -1.2%;
+  background-color: #194579;
+  height: 65px;
+  margin-top: -29px;
+}
+#liste{
+  height: 65px;
+  padding-top: 39px;
+  margin-top: 10px;
+}
+#logoCoin{
+  color: white;/*#6d6f70*/
+  margin-left: -7px;
+  margin-top: 11px;
+}
+#dernier{
+  position: relative;
+margin-top: 4%;
+left: 27%;
 
-.affix {
-  background-color: #eee;
-  -webkit-transition:padding 0.2s ease-out;
-  -moz-transition:padding 0.2s ease-out;  
-  -o-transition:padding 0.2s ease-out;         
-  transition:padding 0.2s ease-out;
+top: 35%;
+}
+#logoCoin>div>img{
+  width: 15px;
+  margin-top: 3px;
+}
+#bologne{
+  margin-left: 10px;
+  height: 18px;
+}
+#milan{
+  margin-top: 0;
+  margin-left: 10px;
+ height: 15px;
+}
+#notif{
+  height: 16px;
+  margin-top: 26px;
+  margin-left: 15px;
+}
+#textNav{
+  padding-left: 12px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+#TextNav{
+  margin-bottom: 0;
+  margin-top: -3px;
+  padding-left: 10px;
+}
+#notification{
+  margin-left: 7.6%;
+}
+#logo{
+  position: absolute;
+  left: 171%;
+}
+.safe{
+  text-align: end;
+  width: 56%;
+  margin-top: 15px;
+  color: white;
+  position: relative;
+  left: 7%;
+}
+.safeS{
+  margin-bottom: 7px;
+}
+.inter{
+  margin-top: 1px;
+}
+#liste>li>a{
+  padding-right: 0px;
+  padding-left: 12px;
+  margin-top: -39px;
+  height: 104%;
+  padding-top: 0px;
+  margin-right: -10px;
+}
+#linkBar1{
+  margin-right: 0px !important;
+}
+#liste>li>a>img{
+  height: 132%;
+}
+#linkBar{
+  border-left: 0.4px solid #194579;
+}
+#bJaune{
+  background-color: #ffcc02;
+}
+#vipButton{
+  background-color: #ffcc02;
+  height: 56px;
+  margin-left: 39%;
+  margin-top: 59px;
+  width: 314px;
+  border: 0px;
+  color: black;
+  text-align: center;
+}
+.divVip{
+  margin-left: -58%;
+}
+.header {
+  background: url('../img/terrain.png') no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  position: relative;
+  width: 100%;
+}
+#float-div{
+  width: 5%;
+margin-left: 3%;
+}
+#slide-out{
+  transform: translateX(-100%);
+  width: 32%;
+  margin-left: -3px;
+  background-color: #022140
+  ;
+  color: #194579;
+}
+#slide-out #lNav{
+  width: 100%;
+  margin-left: 0;
+}
+#separateur{
+  height: 70px;
+  background-color: transparent;
+}
+#accorUl>li{
+  margin-left: 40px;
+  margin-top: 20px;
+  border-bottom: 0.5px solid #022140;
+}
+.logo{
+  position: relative;
+  width: 34%;
+  left: 20%;
+}
+#apple>img,#android >img{
+  width: 50%;
+}
+#apple{
+  margin-left: 15px;
+}
+
+/***********************************
+************************************
+HEADER
+************************************
+***********************************/
+.navbar.navbar-default{
+
+}
+#top{
+  margin-left: 0.2px;
+  background-color: #022140;
+  opacity: 0.94;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 65px;
+}
+#boutonNav{
+  position: relative;
+  top: -18%;
+}
+#boutonNav > button{
+  width: 48%;
+  border-radius: 3px;
+  height: 80%;
+  margin-top: -2px;
+  padding-bottom: 1.2% !important;
+  padding-top: 1.7% !important;
+}
+#Bout{
+  margin-left: -36%;
+}
+.collBar{
+  position: relative;
+
+left: -6%;
+
+top: -9%;
+}
+#navText{
+  width: 100%;
+}
+/*.container-fluid{
+   position: absolute;
+   margin-top: -87px;
+   width: 96%;
+}*/
+.bg-color {
+  background-color: rgba(0, 0, 30, 0);
+  min-height: 650px;
 }
 .navbar-toggleable-sm.navbar-expand-md.scrolling-navbar.double-nav.navbar.navbar-default.navbar-fixed-top{
-    border-top: 0;
     background: rgba(50, 75, 179, 0.02);
+    border-top: 0;
     margin-top: 65px;
-    z-index: 1;
+    z-index: 4;
     position: sticky;
     top: 0;
 }
@@ -38,44 +244,201 @@
     margin-top: -87%;
     margin-left: 3%;
 }
-@media (min-width:768px) {
-    .affix-top {
-      /* navbar style at top */
-      background-color:transparent;
-      border-color:transparent;
-      padding: 15px;
-      -webkit-transition:all 0.5s ease;
-      -moz-transition:all 0.5s ease; 
-      -o-transition:all 0.5s ease;         
-      transition:all 0.5s ease;  
-    }
+#main-header {}
+#myNavbar>ul>li>a{
+  padding-right: 8px;
+  top: 30%
 }
-@media (max-width: 62em) {
-	.navbar-nav {
-		padding-top: .425rem;
-		padding-left: 0.75rem;
-	}
-	.navbar-nav .nav-item {
-		float: none;
-	}
-	.navbar-brand {
-		float: right;
-	}
-	.navbar-brand,
-	.navbar-nav .nav-item {
-		display: block;
-	}
-	.navbar-nav .nav-item + .nav-item {
-		margin-left: 0;
-	}
-	.dropdown-menu {
-		position: relative;
-		float: none;
-	}
+#myNavbar >ul >li{
+  padding-left: 10px;
 }
-nav .navbar-nav .nav-link, nav .navbar-brand {
-   color: #000;
+#myNavbar{
+  margin-top: 13px;
+  margin-left: 32px;
 }
-nav .navbar {
+.dev{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+#texte{
+  position: absolute;
+  z-index: 3;
+  margin-left: 28%;
+
+margin-top: -24%;
+}
+.navbar-default {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 414px) {
+  #top {
+    height: 195px !important;
+    top: 0 !important;
+    padding-top: 8px !important;
+    margin-top: -8px !important;
+  }
+  #lNav{
+    position: relative !important;
+    top: 0% !important;
+    left: 4% !important;
+    width: 108% !important;
+  }
+  #texte{
+    left: -26% !important;
+  }
+  #liste{
+    top: 3% !important;
+    width: 82% !important;
+    left: 19% !important;
+  }
+  .navbar-toggleable-sm.navbar-expand-md.scrolling-navbar.double-nav.navbar.navbar-default.navbar-fixed-top {
+    display:none;
+  }
+  #boutonNav {
+    width: 80% !important;
+    padding-left: 10% !important;
+    padding-bottom: 0 !important;
+    margin-top: -19px !important;
+    top: -56% !important;
+    left: 34% !important;
+  }
+  #slideBar{
+    position: relative;
+    left: -114px;
+  }
+  #navBar {
+    position: relative;
+    right: -95px;
+    top: 18px;
+  }
+  #vipButton {
+    margin-left: -37%;
+    margin-top: 11px;
+  }
+  #float-div {
+    width: 44px;
+    margin-left: 3%;
+    padding-left: 0px;
+  }
+
+  #index2 {
+    margin-top: -95px;
+  }
+}
+@media (max-width: 768px) {
+  #top{
+    height: 130px;
+    top: 0;
+    padding-top: 0;
+    margin-top: -8px;
+  }
+  #lNav{
+    height: 63px;
+    margin-left: -31px;
+    margin-top: 0%;
+  }
+  #myNavbar{
+    margin-top: -157px;
+  }
+  #texte{
+    left: -17%;
+    top: 74%;
+    font-size:100%;
+  }
+  #logoCoin {
+    margin-left: 2px;
+    margin-top: 9px;
+  }
+
+  .navbar-toggleable-sm.navbar-expand-md.scrolling-navbar.double-nav.navbar.navbar-default.navbar-fixed-top {
+      margin-top: -153px;
+      position: sticky;
+      top: 0;
+
+  }
+
+  #stickyNav{
+    margin-top: -45%;
+  }
+  #boutonNav > button{
+    width: 47%;
+    height: 42px;
+
+  }
+  .safe {
+    width: 51%;
+    margin-top: 13px;
+  }
+  #liste > li > a > img {
+    height: 101%;
+  }
+  #liste{
+    position: relative;
+    top: 14%;
+    left: -4%;
+  }
+  #listeBN{
+    width: 100%;
+  }
+  #boutonNav{
+    width: 100%;
+    padding-left: 44.5%;
+    padding-bottom: 0;
+    margin-top: -6px;
+    position: relative;
+    top: 18% !important;
+  }
+  .dev{
+    position: relative;
+    top: -3% !important;
+    left: -9% !important;
+  }
+  #notif{
+    margin-top: 24px;
+  }
+  .texteCenter{
+    position: relative;
+    top: -134%;
+    left: -15%;
+  }
+  #vipButton{
+    margin-left: 36%;
+  }
+  #slide-out{
+    width: 51%;
+    margin-left: -17px;
+  }
+  .logo{
+    left: 226.3% !important;
+    top: -157%;
+  }
+  #apple {
+    margin-left: 20%;
+  }
+  #index2{
+    margin-top: -113px;
+    margin-left:0%;
+  }
+  /* #index2 .card{
+    margin-left:8%;
+  } */
+    #app{
+    display: none;
+  }
+  #dernier{
+    margin-left: 89%;
+  }
+  #devenir{
+    position: relative;
+    top: -32%;
+  }
+  .body .ll{
+    height: 63.5%;
+  }
 }
 
