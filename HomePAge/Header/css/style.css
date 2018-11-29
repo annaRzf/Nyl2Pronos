@@ -27,7 +27,7 @@
   background-color: #001e3b;
   opacity: 0.5;
 }
-#lNav{
+.lNav{
   max-width: 430px;
   min-width: 400px;
   margin-left: -1.2%;
@@ -40,7 +40,7 @@
   padding-top: 39px;
   margin-top: 10px;
 }
-#logoCoin{
+.logoCoin{
   color: white;/*#6d6f70*/
   margin-left: -7px;
   margin-top: 11px;
@@ -49,38 +49,37 @@
   position: relative;
 margin-top: 4%;
 left: 27%;
-
 top: 35%;
 }
-#logoCoin>div>img{
+.logoCoin>div>img{
   width: 15px;
   margin-top: 3px;
 }
-#bologne{
+.bologne{
   margin-left: 10px;
   height: 18px;
 }
-#milan{
+.milan{
   margin-top: 0;
   margin-left: 10px;
  height: 15px;
 }
-#notif{
+.notification >img{
   height: 16px;
   margin-top: 26px;
   margin-left: 15px;
 }
-#textNav{
+.textNav{
   padding-left: 12px;
   margin-bottom: 0;
   margin-top: 2px;
 }
-#TextNav{
+.textNav{
   margin-bottom: 0;
   margin-top: -3px;
   padding-left: 10px;
 }
-#notification{
+.notification{
   margin-left: 7.6%;
 }
 #logo{
@@ -109,7 +108,7 @@ top: 35%;
   padding-top: 0px;
   margin-right: -10px;
 }
-#linkBar1{
+.linkBar1{
   margin-right: 0px !important;
 }
 #liste>li>a>img{
@@ -153,7 +152,7 @@ margin-left: 3%;
   ;
   color: #194579;
 }
-#slide-out #lNav{
+#slide-out .lNav{
   width: 100%;
   margin-left: 0;
 }
@@ -186,7 +185,7 @@ HEADER
 .navbar.navbar-default{
 
 }
-#top{
+.top{
   margin-left: 0.2px;
   background-color: #022140;
   opacity: 0.94;
@@ -276,13 +275,13 @@ margin-top: -24%;
 }
 
 @media (max-width: 414px) {
-  #top {
+  .top {
     height: 195px !important;
     top: 0 !important;
     padding-top: 8px !important;
     margin-top: -8px !important;
   }
-  #lNav{
+  .lNav{
     position: relative !important;
     top: 0% !important;
     left: 4% !important;
@@ -331,13 +330,13 @@ margin-top: -24%;
   }
 }
 @media (max-width: 768px) {
-  #top{
+  .top{
     height: 130px;
     top: 0;
     padding-top: 0;
     margin-top: -8px;
   }
-  #lNav{
+  .lNav{
     height: 63px;
     margin-left: -31px;
     margin-top: 0%;
@@ -350,7 +349,7 @@ margin-top: -24%;
     top: 74%;
     font-size:100%;
   }
-  #logoCoin {
+  .logoCoin {
     margin-left: 2px;
     margin-top: 9px;
   }
