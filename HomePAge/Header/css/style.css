@@ -1,0 +1,81 @@
+.mere{
+  height: 100%;
+}
+.mere .index0{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  background-size: 100%;
+  background-image: url('../img/terrain.png');
+  background-repeat:  no-repeat;
+}
+.mere .index1{
+  position: absolute;
+  z-index: 1;
+  height: 142.5%;
+  background-color: #001e3b;
+  opacity: 0.5;
+}
+
+.affix {
+  background-color: #eee;
+  -webkit-transition:padding 0.2s ease-out;
+  -moz-transition:padding 0.2s ease-out;  
+  -o-transition:padding 0.2s ease-out;         
+  transition:padding 0.2s ease-out;
+}
+.navbar-toggleable-sm.navbar-expand-md.scrolling-navbar.double-nav.navbar.navbar-default.navbar-fixed-top{
+    border-top: 0;
+    background: rgba(50, 75, 179, 0.02);
+    margin-top: 65px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+#stickyNav{
+    position: sticky;
+    top: 0;
+    margin-top: -87%;
+    margin-left: 3%;
+}
+@media (min-width:768px) {
+    .affix-top {
+      /* navbar style at top */
+      background-color:transparent;
+      border-color:transparent;
+      padding: 15px;
+      -webkit-transition:all 0.5s ease;
+      -moz-transition:all 0.5s ease; 
+      -o-transition:all 0.5s ease;         
+      transition:all 0.5s ease;  
+    }
+}
+@media (max-width: 62em) {
+	.navbar-nav {
+		padding-top: .425rem;
+		padding-left: 0.75rem;
+	}
+	.navbar-nav .nav-item {
+		float: none;
+	}
+	.navbar-brand {
+		float: right;
+	}
+	.navbar-brand,
+	.navbar-nav .nav-item {
+		display: block;
+	}
+	.navbar-nav .nav-item + .nav-item {
+		margin-left: 0;
+	}
+	.dropdown-menu {
+		position: relative;
+		float: none;
+	}
+}
+nav .navbar-nav .nav-link, nav .navbar-brand {
+   color: #000;
+}
+nav .navbar {
+}
+
