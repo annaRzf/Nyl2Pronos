@@ -12,8 +12,8 @@ background-color: white;
 position: relative;
 }
 .phone img{
-  width:100%;
-  height:100%; 
+ width: 50%;
+margin: 65px;
 }
 
 .foot{
@@ -86,5 +86,26 @@ position: relative;
   .foot .description h2 {
     font-size:100%;
   }
+}
+
+
+.foot .description h2 {
+  font-size:200%;
+  margin-top:20%;
+  color:#ffcc02;
+}
+
+.foot .description p {
+  color:#fff;
+  font-size:25px;
+}
+
+.buttons button, .button button{
+  border: 1px solid transparent;
+  text-align:left;
+  border-radius: 4px;
+  background:rgba(255, 255, 255, 0);
+  color:#fff;
+  border-color: #fff;
 }
 
