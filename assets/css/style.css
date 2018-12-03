@@ -1,0 +1,674 @@
+/*@import url(bootstrap.css);*/
+
+/*****************************************************
+Typographie**************************************************/
+body {
+  font-family: "Bebas Neue";
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color: #2b2b2b;
+}
+@media only screen and (max-width: 767px) {
+  .hiddensm {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hiddenlg {
+    display: none;
+  }
+}
+
+/***************
+  POPUP-CONNEXION
+  ***************/
+.popup-overlay {
+  /*visibility:hidden;*/
+  display: none;
+}
+.popup-content {
+  /*visibility:hidden;*/
+}
+.popup-back {
+  /*visibility: hidden;*/
+}
+.popup-back.active {
+  /*visibility:visible;*/
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+}
+.popup-overlay.active {
+  /*visibility:visible;*/
+  display: inherit;
+  border: 1px white solid;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.popup-content.active {
+  /*visibility:visible;*/
+  position: fixed;
+  top: 4%;
+  left: 4%;
+  width: 95%;
+  height: 604px;
+  z-index: 5;
+  background-color: white;
+}
+.popup-content.active .connect_part {
+  background-color: white;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+.popup-content.active .connect_part .subscribe_form {
+  margin-top: -7%;
+}
+.popup-content.active .connect_part .subscribe_form button {
+  margin-top: -15%;
+}
+.ens_boutons {
+  margin-top: 20%;
+  justify-content: space-around;
+}
+.ens_boutons button {
+  text-align: right;
+}
+.popup-content.active .connect_part img {
+  margin-top: 15%;
+}
+.popup-content.active .connect_part .acceder p {
+  margin-top: -16%;
+  color: darkgray;
+}
+button.connexion_bouton {
+  background: #0a213e;
+}
+button.inscription_bouton {
+  background: #ffcc02;
+}
+.background_part {
+  background: url("assets/images/popup.png");
+  background-size: cover;
+}
+.background_part h2 {
+  font-size: 180%;
+  color: #ffcc02;
+}
+.background_part p {
+  color: #ffffff;
+}
+/* .logo_nyl2{
+  margin-top:6%;
+} */
+.logo_nyl2 .logo_app {
+  margin-top: -9%;
+}
+@media only screen and(max-width:414px) {
+}
+/***END-POPUP***/
+
+/*****************************************************
+table des pronostiques (Antsa)**************************************************/
+.prono-right {
+  font-size: 11px;
+  width: 100%;
+  margin-top: 7%;
+}
+#prono .prono-right-boot .date h5,
+h6 {
+  font-size: 14px;
+}
+
+.category span {
+  display: block;
+  width: 85%;
+  margin: 3%;
+}
+#prono .prono-right-boot .date {
+  background-color: #f7cc46;
+  padding: 5% 3%;
+  color: #2b2b2b;
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+  margin-top: 3%;
+  height: 70px;
+}
+
+#prono .prono-right-wrapper {
+  position: relative;
+  left: 0;
+}
+
+#prono .prono-right-wrapper .category {
+  margin-top: -6%;
+  color: #8e8e8e;
+  background-color: #ffffff;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  margin-left: 10%;
+  border-top-color: #f7cc46;
+  margin-bottom: 1rem;
+  border-top-style: solid;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.11), 0 3px 10px rgba(0, 0, 0, 0.05);
+  height: 110px;
+}
+#prono .prono-right-wrapper .category h6 {
+  font-size: 10px;
+  font-weight: bold;
+  color: #f7cc46;
+}
+
+#prono .prono-right-wrapper span {
+  font-weight: bold;
+  color: #2b2b2b;
+  font-size: 12px;
+}
+#prono .prono-right-wrapper .checker {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 4;
+  width: 15%;
+  margin-left: 85%;
+  text-align: center;
+}
+#prono .prono-right-wrapper .checker > div {
+  margin-top: 75%;
+}
+/*Media*/
+@media screen and (max-width: 520px) {
+  #prono .prono-right-boot .date h5,
+  h6 {
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
+.prono-right > h6 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  margin-left: 100%;
+  height: 300px;
+  margin-top: -100%;
+}
+.prono-right-title {
+  display: none;
+}
+.carousel-item {
+  height: 350px;
+}
+.carousel-item .card .wts {
+  height: 120px;
+}
+.carousel-item .Pcard {
+  margin-top: -60px;
+}
+.titreP {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#rotate {
+  position: absolute;
+  margin-top: 160%;
+  height: 30px;
+  transform: rotate(-90deg);
+  margin-left: 250px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #rotate {
+    margin-left: 200px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #rotate {
+    margin-left: 425px;
+    margin-top: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prono-right > h6 {
+    display: none;
+  }
+  .prono-right-title {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+/*****************************************************
+pronostique (Falia)**************************************************/
+@media (max-width: 767px) {
+  .guy,
+  .nyl,
+  .logo {
+    display: none;
+  }
+  .bloc {
+    display: none;
+  }
+}
+
+/*****************************************************
+Pricing(Toky)**************************************************/
+
+.pricing-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pricing-content {
+  background: #fff;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  padding: 1px;
+  border-radius: 4px;
+}
+.pricing-content.general {
+  z-index: 1;
+}
+
+#id1 {
+  font-size: 15px;
+  background: #194579;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+#id2 {
+  font-size: 15px;
+  background: #f7cc46;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 37px;
+}
+
+.pricing-content:hover {
+  margin-top: -10px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pricing-content h2 {
+  background-color: #194579;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 30px 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.pricing-content h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  background: #194579;
+  margin-bottom: 0;
+  font-weight: 300;
+  padding-top: 25px;
+}
+
+.pricing-content h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  background: #194579;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.pricing-content h3 span {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.pricing-content h3 sup {
+  font-size: 18px;
+}
+
+.pricing-content ul {
+  list-style: circle;
+  /*margin:25px 0;*/
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
+
+.pricing-content li {
+  /*border-top:1px dotted #EFEFEF;*/
+  width: 100%;
+  color: #000;
+
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 99%;
+  margin-top: 16px;
+}
+
+.pricing-content li:first-child {
+  border-top: none;
+}
+
+.pricing-content li i {
+  float: right;
+}
+
+.pricing-content li del {
+  color: #aaa;
+}
+
+.price-bottom {
+  background: #194579;
+  text-align: center;
+  padding-top: 10px 0;
+}
+
+.choice a {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.choice a:hover {
+  color: #f7cc46;
+  background-color: transparent;
+}
+
+.pricing-content p {
+  background: #fff;
+  padding: -5px;
+  text-align: left;
+  color: #6d6f70;
+}
+
+.pricing-content.featured {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  position: relative;
+  padding: 0px;
+  z-index: 3;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pricing-content.featured h3 {
+  font-size: 38px;
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  background-color: #f7cc46;
+  background: #f7cc46;
+  margin-bottom: 0;
+  font-weight: 300;
+  padding-top: 25px;
+}
+
+.pricing-content.featured h1 {
+  color: #000;
+  text-align: center;
+  font-size: 45px;
+  background-color: #f7cc46;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.price-bottom-feature {
+  background: #f7cc46;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.choice2 a {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+}
+
+.choice2 a:hover {
+  color: #194579;
+  background-color: transparent;
+}
+
+.choice2 a:visited {
+  color: #194579;
+}
+
+/*****************************************************
+Application(Anna)**************************************************/
+<<<<<<< HEAD:nylpronos/assets/css/style.css
+
+#application {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 100%;
+}
+.offre {
+  width: 95%;
+  margin: auto;
+  margin-top: -11%;
+  padding-top: 2%;
+  padding-left: 3%;
+  background-color: white;
+  position: relative;
+}
+.phone img {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+#application .buttons {
+  margin-bottom: 7%;
+}
+.foot {
+  margin: auto;
+  width: 100%;
+  background-image: url("../images/fond-foot.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.foot .contents {
+  flex-wrap: nowrap;
+  z-index: 2;
+  margin-top: 6.6%;
+}
+.foot .description {
+  /*margin-left:-3%;*/
+}
+.foot .description h2 {
+  font-size: 200%;
+  margin-top: 20%;
+  color: #ffcc02;
+}
+
+.foot .description p {
+  color: #fff;
+  font-size: 25px;
+}
+
+.buttons button,
+.button button {
+  border: 1px solid transparent;
+  text-align: left;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  border-color: #fff;
+}
+
+.offre .bonus {
+  color: #194579;
+  font-size: 150%;
+}
+.offre .middle {
+  font-size: 115%;
+  margin-top: 1%;
+}
+/*Vue Ipad horizontale*/
+@media only screen and (max-width: 1024px) {
+  .container .description p {
+    font-size: 20px;
+  }
+
+  .foot .description h2 {
+    font-size: 100%;
+  }
+}
+
+/*Vue Iphone Verticale*/
+@media only screen and (max-width: 712px) {
+  .container .description p {
+    font-size: 15px;
+  }
+  .foot .description h2 {
+    font-size: 88%;
+  }
+  #application .buttons .ensemble button {
+    text-align: center;
+  }
+  .phone img {
+    margin-top: 15%;
+    width: 69%;
+  }
+  .offre .middle {
+    font-size: 107%;
+  }
+  .offre {
+    width: 95%;
+    text-align: center;
+    margin-top: -25%;
+    padding-top: 2%;
+    padding-left: 3%;
+    background-color: white;
+    position: relative;
+  }
+}
+
+/*Vue Ipad horizontale*/
+@media only screen and (max-width: 1024px) {
+  .container .description p {
+    font-size: 20px;
+  }
+
+  .foot .description h2 {
+    font-size: 100%;
+  }
+}
+
+/*Vue Iphone Verticale*/
+@media only screen and (max-width: 414px) {
+  .container .description p {
+    font-size: 15px;
+  }
+  .foot .description h2 {
+    font-size: 100%;
+  }
+}
+=======
+/*Dans telecharger/css/style.css */
+
+>>>>>>> a7bc94a702f5414744928a16b212d80a04926bba:HomePAge/RejoindreNYL/css/style.css
+
+/*****************************************************
+Bonus(Solofo)**************************************************/
+#Bonus {
+  border-bottom: solid;
+  border-color: #adadad;
+  border-width: 1px;
+}
+.blue-button > button {
+  background-color: #022140;
+}
+.blue-button > button:hover,
+.blue-button > button:active {
+  background-color: #194579;
+}
+.bonus-detail {
+  background-color: #ffffff;
+  margin-bottom: 3px;
+}
+.bonus-detail > .letter {
+  border-right: solid;
+  border-width: 2px;
+}
+.bonus-detail > .price {
+  text-align: center;
+  background-color: #f7cc46;
+  padding-top: 5px;
+}
+.bonus img {
+  width: 100%;
+  height: 100%;
+}
+.blue-footer > div {
+  background-color: #001e3b;
+  padding: 20px;
+}
+.blue-footer .about {
+  font-size: 14px;
+  text-align: justify;
+  word-spacing: 1px;
+  padding-left: 0px;
+}
+.blue-footer div div ul {
+  list-style-type: none;
+}
+.blue-footer div div div div {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.blue-footer div div div div a img {
+  width: 50%;
+}
+
+.footer-copyright div div img {
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+@media (max-width: 767px) {
+  #partenariat {
+    display: none;
+  }
+  .bonus-detail > .letter {
+    border-right: none;
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 2px;
+  }
+}
+.partenariat a img {
+  padding: 10px;
+  margin-right: 15px;
+}
